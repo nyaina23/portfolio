@@ -7,6 +7,7 @@
     <title>Portfolio - Ny Aina</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Poppins:wght@200;400&display=swap"
@@ -16,12 +17,12 @@
 <body>
     <div class="myContainer">
         <div class="heroSection">
-            <header>
+            <!-- <header>
                 <div class="header-btn-action">
                     <button>EN</button>
                     <button>☀</button>
                 </div>
-            </header>
+            </header> -->
             <div class="leftHero">
                 <h1>Je transforme vos designs en sites web!</h1>
                 <p>Je suis Ny Aina RAKOTOSEHENO, <span id="metier">développeur Front-end.</span></p>
@@ -48,23 +49,24 @@
                     </a>
                 </div>
             </div>
+            <img  id="image_mobil" src="/images/Laptop.png" alt="">
         </div>
         <hr class="myHr">
         <p id="expliqueText">Je crée des pages web en transformant des maquettes graphiques en code HTML, CSS,
             JavaScript, et interagis avec des designers.</p>
         <section class="traveaux">
-            <h2>Mes traveaux</h2>
+            <h2>Mes travaux</h2>
             <div class="cont_traveaux">
                 <div class="cont_one_trav">
                     <img src="/images/Capture d’écran 2023-11-05 003250.png" alt="">
                     <div class="linkWork">
                         <a href="#" class="linkMaquette" target="_blank">
-                            <img src="/images/icons/Figma.png" alt="">
-                            Maquette
+                            <img class="radiusIcon" src="/images/icons/Figma.png" alt="">
+                            <span>Maquette</span>
                         </a>
                         <a href="#" class="siteWork" target="_blank">
                             <img src="/images/icons/Web.png" alt="">
-                            Site web
+                            <span>Site web</span>
                         </a>
                     </div>
                 </div>
@@ -72,12 +74,12 @@
                     <img src="/images/Capture d’écran 2023-11-05 003450.png" alt="">
                     <div class="linkWork">
                         <a href="#" class="linkMaquette" target="_blank">
-                            <img src="/images/icons/Figma.png" alt="">
-                            Maquette
+                            <img class="radiusIcon" src="/images/icons/Figma.png" alt="">
+                            <span>Maquette</span>
                         </a>
                         <a href="#" class="siteWork" target="_blank">
                             <img src="/images/icons/Web.png" alt="">
-                            Site web
+                            <span>Site web</span>
                         </a>
                     </div>
                 </div>
@@ -86,11 +88,11 @@
                     <div class="linkWork">
                         <a href="#" class="linkMaquette" target="_blank">
                             <img src="/images/icons/Adobe XD.png" alt="">
-                            Maquette
+                            <span>Maquette</span>
                         </a>
                         <a href="#" class="siteWork" target="_blank">
                             <img src="/images/icons/Web.png" alt="">
-                            Site web
+                            <span>Site web</span>
                         </a>
                     </div>
                 </div>
@@ -99,59 +101,100 @@
         </section>
         <section class="skills">
             <h2>Je maitrise</h2>
-            <div>Html</div>
-            <div>CSS</div>
-            <div>JS</div>
+            <div class="cont_skills">
+                <div>
+                    Html
+                    <img src="/images/icons/Html 5.png" alt="">
+                </div>
+                <div>
+                    CSS
+                    <img src="/images/icons/CSS3.png" alt="">
+                </div>
+                <div>
+                    JavaScript
+                    <img src="/images/icons/JavaScript.png" alt="">
+                </div>
+            </div>
         </section>
         <section class="testimonials">
             <h2>Testimonials</h2>
-            <div>
+            <div class="cont_testimonials">
                 <div class="cont_one_testim">
                     <div class="head_testim">
-                        <img src="" alt="">
+                        <img src="/images/pdp_1.png" alt="">
                         <div class="info_testim">
-                            <span>Name</span>
-                            <span>Fonction</span>
+                            <span>Marie Dupont</span>
+                            <span>Gérante de boutique en ligne</span>
                         </div>
                     </div>
                     <div class="content_testim">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, obcaecati!
+                        <span>😊</span>
+                        Le site web que Mr Ny Aina a créé pour ma boutique a transformé mon entreprise. La conception
+                        est élégante, la navigation est fluide, et les ventes ont augmenté de manière significative. Je
+                        recommande vivement ses services!
+                        <span>😊</span>
                     </div>
                 </div>
                 <div class="cont_one_testim">
                     <div class="head_testim">
-                        <img src="" alt="">
+                        <img src="/images/pdp_4.png" alt="">
                         <div class="info_testim">
-                            <span>Name</span>
-                            <span>Fonction</span>
+                            <span>Marc Lefebvre</span>
+                            <span>Propriétaire d'un restaurant</span>
                         </div>
                     </div>
                     <div class="content_testim">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, obcaecati!
+                        <span>😊</span>
+                        Grâce à Mr Ny Aina, notre site web est devenu un outil essentiel pour attirer de nouveaux
+                        clients. Sa créativité et son expertise technique ont vraiment fait la différence. Nous sommes
+                        ravis de son travail.
+                        <span>😊</span>
                     </div>
                 </div>
                 <div class="cont_one_testim">
                     <div class="head_testim">
-                        <img src="" alt="">
+                        <img src="/images/pdp_3.png" alt="">
                         <div class="info_testim">
-                            <span>Name</span>
-                            <span>Fonction</span>
+                            <span>Sophie Martin</span>
+                            <span>Directrice d'une école en ligne</span>
                         </div>
                     </div>
                     <div class="content_testim">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, obcaecati!
+                        <span>😊</span>
+                        La collaboration avec Mr Ny Aina a été incroyable. Notre site web éducatif est désormais
+                        convivial, moderne et plein de fonctionnalités utiles. Les retours de nos élèves et professeurs
+                        sont unanimes : c'est un énorme succès!
+                        <span>😊</span>
                     </div>
                 </div>
             </div>
         </section>
+        <footer>
+            <h2 class="contact_me">Contactez-moi</h2>
+            <div class="cont_btn_call">
+                <a href="#">
+                    <img src="/images/icons/GitHub.png" alt="">
+                    GitHub
+                </a>
+                <a href="#">
+                    <img src="/images/icons/LinkedIn.png" alt="">
+                    LinkdIn
+                </a>
+                <a href="#">
+                    <img src="/images/icons/TwitterX.png" alt="">
+                    Twitter
+                </a>
+                <a href="#">
+                    <img src="/images/icons/Discord New.png" alt="">
+                    Discord
+                </a>
+                <a href="#">
+                    <img src="/images/icons/Email.png" alt="">
+                    nyainalovanirina@gmail.com
+                </a>
+            </div>
+        </footer>
     </div>
-    <footer>
-        <a href="#">GitHub</a>
-        <a href="#">LinkdIn</a>
-        <a href="#">Twitter</a>
-        <a href="#">Discord</a>
-        <a href="#">nyainalovanirina@gmail.com</a>
-    </footer>
 </body>
 
 </html>

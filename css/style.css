@@ -1,6 +1,7 @@
 body {
     background-color: var(--backgrounds);
-    font-family: var(--font-text)
+    font-family: var(--font-text);
+    color: var(--text);
 }
 
 .myContainer {
@@ -11,6 +12,11 @@ body {
 
 .heroSection {
     margin-bottom: 7rem;
+    background-image: url(/images/Laptop.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 25vw;
+    background-position-y: bottom;
 }
 
 header {
@@ -19,14 +25,14 @@ header {
 }
 
 .leftHero {
-    width: 41.5rem;
+    width: 50vw;
     max-width: 100%;
 }
 
 .leftHero h1 {
     font-family: var(--font-title);
     color: var(--solid);
-    font-size: 4rem;
+    font-size: 4.6vw;
     padding: 6rem 0 1rem;
 }
 
@@ -63,6 +69,12 @@ header {
     width: 25px;
 }
 
+#image_mobil {
+    display: none;
+    width: 70%;
+    margin: auto;
+}
+
 /* --- Fin hero section --- */
 
 .myHr {
@@ -80,6 +92,10 @@ header {
 
 /* --- Mes traveaux --- */
 
+.traveaux {
+    margin-bottom: 6rem;
+}
+
 h2 {
     text-align: center;
     font-family: var(--font-title);
@@ -88,7 +104,8 @@ h2 {
     margin-bottom: 3rem;
 }
 
-.cont_traveaux {
+.cont_traveaux,
+.cont_testimonials {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -127,7 +144,12 @@ h2 {
     height: 245px;
     border: 3px solid var(--border);
     object-fit: cover;
+    object-position: top;
     border-radius: 7px;
+}
+
+.radiusIcon {
+    border-radius: 9px;
 }
 
 .linkMaquette img {
@@ -138,7 +160,89 @@ h2 {
     width: 40px;
 }
 
+.linkWork a img {
+    transition: 0.3s;
+}
+
+.linkWork a:hover img {
+    box-shadow: 0px 0px 25px var(--shadow);
+}
+
 .voirPlus {
     width: fit-content;
     margin: 1rem auto 2.5rem;
+}
+
+/* --- Skills --- */
+
+.cont_skills {
+    display: grid;
+    margin-bottom: 10rem;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    color: var(--text);
+}
+
+.cont_skills div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Testimonials --- */
+
+.testimonials {
+    margin-bottom: 9rem;
+}
+
+.head_testim {
+    display: flex;
+    gap: 10px;
+}
+
+.head_testim img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.info_testim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info_testim span {
+    font-size: 15px;
+}
+
+.info_testim span:nth-child(1) {
+    font-weight: bold;
+    color: var(--secondary-text);
+}
+
+.content_testim {
+    padding: 20px 25px;
+    text-align: center;
+}
+
+.content_testim span {
+    font-family: var(--font-title);
+    font-size: 20px;
+    color: var(--solid);
+    line-height: 22px;
+}
+
+.cont_testimonials {
+    margin-bottom: 4rem;
+}
+
+/* --- Footer --- */
+
+.contact_me {
+    text-align: start;
 }
