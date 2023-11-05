@@ -1,0 +1,36 @@
+/* --- Reset --- */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------- */
+
+:root {
+    /* Color */
+    --backgrounds: #F4FAFF;
+    --interactive: #E6F4FE;
+    --border: #ACD8FC;
+    --focus: #5EB1EF;
+    --solid: #0090FF;
+    --secondary-text: #0D74CE;
+    --text: #113264;
+    --shadow: rgba(0, 0, 0, 0.3);
+
+    /* Dark mode color */
+    --dark-backgrounds: #0D1520;
+    --dark-interactive: #003362;
+    --dark-border: #104D87;
+    --dark-focus: #2870BD;
+    --dark-solid: #0090FF;
+    --dark-secondary-text: #70B8FF;
+    --dark-text: #C2E6FF;
+
+
+    /* Font */
+    --font-title: 'Chilanka', cursive;
+    --font-text: 'Poppins', sans-serif;
+}

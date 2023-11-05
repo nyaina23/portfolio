@@ -1,35 +1,144 @@
-/* --- Reset --- */
-*,
-::before,
-::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body {
+    background-color: var(--backgrounds);
+    font-family: var(--font-text)
 }
 
-/* ------------- */
+.myContainer {
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+}
 
-:root {
-    /* Color */
-    --backgrounds: #F4FAFF;
-    --interactive: #F4FAFF;
-    --border: #ACD8FC;
-    --focus: #5EB1EF;
-    --solid: #0090FF;
-    --secondary-text: #0D74CE;
-    --text: #113264;
+.heroSection {
+    margin-bottom: 7rem;
+}
 
-    /* Dark mode color */
-    --dark-backgrounds: #0D1520;
-    --dark-interactive: #003362;
-    --dark-border: #104D87;
-    --dark-focus: #2870BD;
-    --dark-solid: #0090FF;
-    --dark-secondary-text: #70B8FF;
-    --dark-text: #C2E6FF;
+header {
+    display: flex;
+    justify-content: end;
+}
 
+.leftHero {
+    width: 41.5rem;
+    max-width: 100%;
+}
 
-    /* Font */
-    --base-font: Raleway, sans-serif;
-    --another-font: Roboto, sans-serif;
+.leftHero h1 {
+    font-family: var(--font-title);
+    color: var(--solid);
+    font-size: 4rem;
+    padding: 6rem 0 1rem;
+}
+
+#metier {
+    color: var(--secondary-text);
+}
+
+.cont_btn_call {
+    display: flex;
+    gap: 10px;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.cont_btn_call a,
+.voirPlus {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--backgrounds);
+    padding: 4px 6px;
+    border: 3px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--focus);
+    transition: 0.3s;
+}
+
+.cont_btn_call a:hover,
+.voirPlus:hover {
+    box-shadow: 0px 0px 25px var(--shadow);
+}
+
+.cont_btn_call a img {
+    width: 25px;
+}
+
+/* --- Fin hero section --- */
+
+.myHr {
+    border-color: var(--interactive);
+    width: 50%;
+    margin: auto;
+}
+
+#expliqueText {
+    width: 20rem;
+    margin: 4rem auto 10rem;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* --- Mes traveaux --- */
+
+h2 {
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 3rem;
+    color: var(--solid);
+    margin-bottom: 3rem;
+}
+
+.cont_traveaux {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.cont_one_trav {
+    position: relative;
+    border-radius: 10px;
+    /* padding: 1rem 1.2rem; */
+}
+
+.linkWork {
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transform: translateY(-71%);
+    transition: 0.3s;
+}
+
+.linkWork a {
+    display: flex;
+    text-decoration: none;
+    color: var(--secondary-text);
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont_one_trav:hover .linkWork {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cont_one_trav>img {
+    width: 100%;
+    height: 245px;
+    border: 3px solid var(--border);
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.linkMaquette img {
+    width: 40px;
+}
+
+.siteWork img {
+    width: 40px;
+}
+
+.voirPlus {
+    width: fit-content;
+    margin: 1rem auto 2.5rem;
 }
